@@ -1,0 +1,134 @@
+<html>
+
+<!-- I am a limited-limiting content, please watch me on a desktop browser for a full experience. -->
+
+<head>
+
+<style>
+html, body, video {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+
+video {
+    display: inline-block;  
+
+}
+
+p {
+    visibility: visible;
+    color:black;
+    text-align: left;
+
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 10px;
+
+}
+
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+
+<script>
+$( document ).ready(function() {    
+  console.log("here");  
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+    if (isMobile.matches) {
+        alert("I am a limited-limiting content, please watch me on a desktop browser for a full experience");
+    }
+    else {
+ document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+document.getElementsByTagName('video')[0].style.display = 'none';
+    }
+ });
+
+</script>
+
+<script type="text/javascript">
+    
+function onLoad(){ 
+console.log("loading");
+document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+document.getElementsByTagName('video')[0].style.display = 'none';
+}
+;
+
+
+};
+
+</script>
+
+
+</head>
+<body>
+
+
+
+<p></p>
+
+<script>
+
+function showSource(){;
+    var source = "<html>";
+    source += document.getElementsByTagName('html')[0].innerHTML;
+    source += "</html>";
+    source = source.replace("&lt;",/</g).replace( "&gt;", />/g);
+    document.getElementsByTagName('p')[0].innerText = source;
+}  
+
+showSource();
+
+</script>
+
+<video  autoplay  poster="black.jpg" loop onloadstart=onLoad() >    
+  <source src="https://firebasestorage.googleapis.com/v0/b/axelle-aa1c6.appspot.com/o/nonesuch(25'50'').mov?alt=media&token=2849baba-c4df-4679-8da5-b8e0579a7213">
+</video>
+
+<script type="text/javascript">
+$( document ).ready(function() {    
+  console.log("here");  
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+    if (isMobile.matches) {
+        document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
+document.getElementsByTagName('video')[0].style.display = 'none';
+    }
+    else {
+       var x = 0;
+    
+document.getElementsByTagName('video')[0].addEventListener('loadedmetadata', function() {
+  if (x == 0) {
+      var now = Math.floor((Date.now()/1000) % 1550);
+  this.currentTime = now;
+  document.getElementsByTagName('video')[0].style.display = 'inline-block';
+document.getElementsByTagName('p')[0].style.display = 'none';
+document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
+  x += 1;
+  }
+  
+
+}, false);
+    }
+ });
+
+</script>
+
+</body>
+
+<!-- built by micah friedland.micah (at) gmail.com -->
+
+</html>
