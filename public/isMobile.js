@@ -1,3 +1,5 @@
+var alertText ="I am a limited-limiting content, please watch me on a desktop browser for a full experience";
+
 window.mobileAndTabletcheck = function() {
     var check = false;
     (function(a) {

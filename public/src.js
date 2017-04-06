@@ -9,7 +9,7 @@ var siteSource ="<html>\n" +
 "      <script type='text/javascript' src='isMobile.js'></script>\n" +
 "      <script type='text/javascript'>\n" +
 "          if (window.mobileAndTabletcheck()) {\n" +
-"              alert('I am a limited-limiting content, please watch me on a desktop browser for a full experience');\n" +
+"              alert(alertText);\n" +
 "          } else {\n" +
 "              document.getElementsByTagName('body')[0].style.backgroundColor = 'white';\n" +
 "              document.getElementsByTagName('video')[0].style.display = 'none';\n" +
