@@ -4,7 +4,9 @@ var siteSource ="<html>\n" +
 "      for a full experience. -->\n" +
 "\n" +
 "  <head>\n" +
+"\n" +
 "      <!-- built by micah friedland.micah (at) gmail.com -->\n" +
+"\n" +
 "      <link rel='stylesheet' type='text/css' href='style.css'>\n" +
 "      <script type='text/javascript' src='isMobile.js'></script>\n" +
 "      <script type='text/javascript'>\n" +
