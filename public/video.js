@@ -1,6 +1,7 @@
 if (window.mobileAndTabletcheck()) {
     document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
     document.getElementsByTagName('video')[0].style.display = 'none';
+    alert("I am a limited-limiting content, please watch me on a desktop browser for a full experience");
 } else {
     var x = 0;
     document.getElementsByTagName('video')[0].addEventListener('loadedmetadata', function() {

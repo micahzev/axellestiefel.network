@@ -10,12 +10,6 @@ var siteSource ="<html>\n" +
 "      <link rel='stylesheet' type='text/css' href='style.css'>\n" +
 "      <script type='text/javascript' src='isMobile.js'></script>\n" +
 "      <script type='text/javascript'>\n" +
-"          if (window.mobileAndTabletcheck()) {\n" +
-"              alert(alertText);\n" +
-"          } else {\n" +
-"              document.getElementsByTagName('body')[0].style.backgroundColor = 'white';\n" +
-"              document.getElementsByTagName('video')[0].style.display = 'none';\n" +
-"          }\n" +
 "          function onLoad() {\n" +
 "              document.getElementsByTagName('body')[0].style.backgroundColor = 'white';\n" +
 "              document.getElementsByTagName('video')[0].style.display = 'none';\n" +
