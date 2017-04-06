@@ -12,7 +12,7 @@ video {
     display: inline-block;
 }
 
-p {
+pre {
     visibility: visible;
     color: black;
     text-align: left;

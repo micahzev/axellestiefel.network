@@ -1,8 +1,10 @@
 <html>
-<!-- I am a limited-limiting content, please watch me on a desktop browser for a full experience. -->
+
+<!-- I am a limited-limiting content, please watch me on a desktop browser
+    for a full experience. -->
 
 <head>
-	<!-- built by micah friedland.micah (at) gmail.com -->
+    <!-- built by micah friedland.micah (at) gmail.com -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="isMobile.js"></script>
     <script type="text/javascript">
@@ -12,6 +14,7 @@
             document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
             document.getElementsByTagName('video')[0].style.display = 'none';
         }
+
         function onLoad() {
             document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
             document.getElementsByTagName('video')[0].style.display = 'none';
@@ -35,38 +38,16 @@
 </head>
 
 <body>
-    <p></p>
+    <pre></pre>
+    <script type='text/javascript' src='src.js'>
+    </script>
     <script>
-        function showSource() {;
-            var source = "<html>";
-            source += document.getElementsByTagName('html')[0].innerHTML;
-            source += "</html>";
-            source = source.replace("&lt;", /</g).replace("&gt;", />/g);
-            document.getElementsByTagName('p')[0].innerText = source;
-        }
-        showSource();
+        document.getElementsByTagName('pre')[0].textContent = siteSource;
     </script>
     <video autoplay poster="black.jpg" loop onloadstart=onLoad()>
-        <source src="https://firebasestorage.googleapis.com/v0/b/axelle-aa1c6.appspot.com/o/nonesuch(25'50'').mov?alt=media&token=2849baba-c4df-4679-8da5-b8e0579a7213">
-    </video>
-    <script>
-        if (window.mobileAndTabletcheck()) {
-            document.getElementsByTagName('body')[0].style.backgroundColor = 'white';
-            document.getElementsByTagName('video')[0].style.display = 'none';
-        } else {
-            var x = 0;
-
-            document.getElementsByTagName('video')[0].addEventListener('loadedmetadata', function() {
-                if (x == 0) {
-                    var now = Math.floor((Date.now() / 1000) % 1550);
-                    this.currentTime = now;
-                    document.getElementsByTagName('video')[0].style.display = 'inline-block';
-                    document.getElementsByTagName('p')[0].style.display = 'none';
-                    document.getElementsByTagName('body')[0].style.backgroundColor = 'black';
-                    x += 1;
-                }
-            }, false);
-        }
-    </script>
+            <source src="https://firebasestorage.googleapis.com/v0/b/axelle-aa1c6.appspot.com/o/nonesuch.mov?alt=media&token=bc90d00f-0481-4f11-96a0-b99809b5d7e5">
+        </video>
+    <script type='text/javascript' src='video.js'></script>
 </body>
+
 </html>
