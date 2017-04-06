@@ -44,9 +44,9 @@ var siteSource ="<html>\n" +
 "          document.getElementsByTagName('pre')[0].textContent = siteSource;\n" +
 "      </script>\n" +
 "      <video autoplay poster='black.jpg' loop onloadstart=onLoad()>\n" +
-"              <source src='https://firebasestorage.googleapis.com/v0/b/axelle-aa1c6.appspot.com/o/nonesuch.mov?alt=media&token=bc90d00f-0481-4f11-96a0-b99809b5d7e5'>\n" +
+"              <source src='https://goo.gl/MySq4t'>\n" +
 "          </video>\n" +
 "      <script type='text/javascript' src='video.js'></script>\n" +
 "  </body>\n" +
 "\n" +
-"</html>"
+"</html>";
