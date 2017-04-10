@@ -40,7 +40,7 @@ var siteSource ="<html>\n" +
 "          document.getElementsByTagName('pre')[0].textContent = siteSource;\n" +
 "      </script>\n" +
 "      <video autoplay poster='black.jpg' loop onloadstart=onLoad()>\n" +
-"              <source src='https://goo.gl/MySq4t'>\n" +
+"              <source src='https://goo.gl/WgF3HM'>\n" +
 "          </video>\n" +
 "      <script type='text/javascript' src='video.js'></script>\n" +
 "  </body>\n" +
