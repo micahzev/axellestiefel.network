@@ -1,6 +1,7 @@
 html, body, video {
     margin: 0;
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -10,16 +11,5 @@ body {
 
 video {
     display: inline-block;
-}
-
-pre {
-    visibility: visible;
-    color: black;
-    text-align: left;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-size: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 15px;
+    background-color: black;
 }
