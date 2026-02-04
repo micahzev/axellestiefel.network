@@ -24,7 +24,7 @@
   </head>
 
   <body>
-    <div class="video-wrapper">
+    <div id="video-wrapper" class="video-wrapper hidden">
       <video
         autoplay
         muted
@@ -32,6 +32,7 @@
         poster="black.jpg" 
         loop
         id="my-video"
+        preload="auto"
         >
           <source src="https://firebasestorage.googleapis.com/v0/b/axelle-aa1c6.appspot.com/o/nonesuch.mp4?alt=media&token=69170259-5f9f-46e9-b2d4-61c391c8d6fe" />
       </video>
@@ -39,7 +40,8 @@
         <button id="unmute-button" class="button unmute-button">Unmute</button>
         <button class="button link-button" onclick="location.href='https://axellestiefel.com';" />i</button>
       </div>
-      <script type='text/javascript' src='video.js'></script>
     </div>
+    <div id="loader" class="loader">loading…</div>
+    <script type='text/javascript' src='video.js'></script>
   </body>
 </html>
