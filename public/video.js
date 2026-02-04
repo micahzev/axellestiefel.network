@@ -1,3 +1,16 @@
+const videoElement = document.getElementById('my-video');
+const unmuteButton = document.getElementById('unmute-button');
+
+unmuteButton.addEventListener('click', () => {
+    videoElement.muted = !videoElement.muted;
+    // Optional: Update the button text based on the muted state
+    if (videoElement.muted) {
+        unmuteButton.textContent = 'Unmute';
+    } else {
+        unmuteButton.textContent = 'Mute';
+    }
+});
+
 var x = 0;
 document.getElementsByTagName('video')[0].addEventListener('loadedmetadata', function() {
     if (x == 0) {
