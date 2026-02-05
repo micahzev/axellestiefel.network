@@ -1,3 +1,7 @@
+document.fonts.load("1em Abel").then(() => {
+  document.body.style.visibility = "visible";
+});
+
 const video = document.getElementById("my-video");
 const app = document.getElementById("video-wrapper");
 const loader = document.getElementById("loader");
