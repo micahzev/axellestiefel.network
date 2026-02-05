@@ -65,3 +65,13 @@ video {
   background: black;
   color: #808080;
 }
+
+.loading-text {
+  display: flex;
+}
+
+#dots {
+  width: 1em;
+  overflow: hidden;
+  text-align: left;
+}

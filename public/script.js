@@ -2,6 +2,19 @@ const video = document.getElementById("my-video");
 const app = document.getElementById("video-wrapper");
 const loader = document.getElementById("loader");
 
+const dots = document.getElementById("dots");
+let count = 0;         // start from 0
+let direction = 1;     // 1 = increasing, -1 = decreasing
+
+setInterval(() => {
+  dots.textContent = ".".repeat(count);
+
+  count += direction;
+
+  if (count === 3) direction = -1; // reverse at max
+  if (count === 0) direction = 1;  // reverse at min
+}, 400);
+
 var x = 0;
 document.getElementsByTagName("video")[0].addEventListener(
   "loadedmetadata",
@@ -18,7 +31,7 @@ document.getElementsByTagName("video")[0].addEventListener(
   false,
 );
 
-video.addEventListener("loadeddata", () => {
+video.addEventListener("canplay", () => {
   app.classList.remove("hidden");
   loader.style.display = "none";
 });
