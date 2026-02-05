@@ -6,11 +6,6 @@ const video = document.getElementById("my-video");
 const app = document.getElementById("video-wrapper");
 const loader = document.getElementById("loader");
 
-// 1540 is the number of seconds in the video
-var now = Math.floor((Date.now() / 1000) % 1540);
-
-video.currentTime = now; // forces first frame decode
-
 const dots = document.getElementById("dots");
 let count = 0; // start from 0
 let direction = 1; // 1 = increasing, -1 = decreasing
@@ -29,6 +24,8 @@ document.getElementsByTagName("video")[0].addEventListener(
   "loadedmetadata",
   function () {
     if (x == 0) {
+      // 1540 is the number of seconds in the video
+      var now = Math.floor((Date.now() / 1000) % 1540);
       this.currentTime = now;
       document.getElementsByTagName("video")[0].style.display = "inline-block";
       document.getElementsByTagName("body")[0].style.backgroundColor = "black";
