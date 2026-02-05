@@ -4,7 +4,12 @@ video {
   margin: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Abel', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Abel",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 
 body {
@@ -54,7 +59,12 @@ video {
 
   background: rgba(0, 0, 0, 0.3);
   color: #808080;
-  font-family: 'Abel', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Abel",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 
 .loader {
