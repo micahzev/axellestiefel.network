@@ -60,3 +60,15 @@ unmuteButton.addEventListener("click", () => {
     unmuteButton.textContent = "Mute";
   }
 });
+
+
+video.addEventListener('error', function(e) {
+  const currentSrc = video.currentSrc;
+  const fallbackSrc = 'https://firebasestorage.googleapis.com/v0/b/axelle-aa1c6.appspot.com/o/nonesuch_mobile_encoded.mp4?alt=media&token=cf036754-24a4-492c-90c6-7c4282ca26a7';
+
+  if (currentSrc !== fallbackSrc) {
+    video.src = fallbackSrc;
+    video.load();
+    video.play();
+  }
+}, true); // 'true' captures errors from child <source> elements
