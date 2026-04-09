@@ -101,7 +101,7 @@ button:focus-visible {
 
 .loading-text {
   display: flex;
-  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-size: clamp(1.4rem, 5vw, 1.66rem);
 }
 
 #dots {
