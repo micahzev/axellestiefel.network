@@ -48,6 +48,7 @@ video.addEventListener("loadeddata", () => {
 });
 
 const videoElement = document.getElementById("my-video");
+
 const unmuteButton = document.getElementById("unmute-button");
 
 unmuteButton.addEventListener("click", () => {
@@ -59,4 +60,31 @@ unmuteButton.addEventListener("click", () => {
   } else {
     unmuteButton.textContent = "Mute";
   }
+});
+
+const unmuteIconButton = document.getElementById("unmute-icon-button");
+
+const iconMuted = document.getElementById("icon-muted");
+const iconUnmuted = document.getElementById("icon-unmuted");
+
+unmuteIconButton.addEventListener("click", () => {
+  videoElement.muted = !videoElement.muted;
+
+  iconMuted.style.display = videoElement.muted ? "block" : "none";
+  iconUnmuted.style.display = videoElement.muted ? "none" : "block";
+});
+
+// kebab
+
+const trigger = document.querySelector(".kebab-trigger");
+const dropdown = document.querySelector(".kebab-dropdown");
+
+trigger.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("open");
+});
+
+// Close when clicking anywhere else
+document.addEventListener("click", () => {
+  dropdown.classList.remove("open");
 });

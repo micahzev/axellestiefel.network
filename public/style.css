@@ -110,9 +110,17 @@ button:focus-visible {
   text-align: left;
 }
 
-.github-button svg {
+.button svg {
   display: block;
   margin: auto;
+}
+
+/* desktop: hide icon button, show text button */
+.unmute-icon-button {
+  display: none;
+}
+.unmute-button {
+  display: flex;
 }
 
 /* Mobile override */
@@ -126,5 +134,12 @@ button:focus-visible {
   .button-wrapper {
     gap: 1em;
     bottom: 0.75em;
+  }
+
+  .unmute-icon-button {
+    display: flex;
+  }
+  .unmute-button {
+    display: none;
   }
 }
