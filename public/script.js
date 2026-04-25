@@ -73,18 +73,3 @@ unmuteIconButton.addEventListener("click", () => {
   iconMuted.style.display = videoElement.muted ? "block" : "none";
   iconUnmuted.style.display = videoElement.muted ? "none" : "block";
 });
-
-// kebab
-
-const trigger = document.querySelector(".kebab-trigger");
-const dropdown = document.querySelector(".kebab-dropdown");
-
-trigger.addEventListener("click", (e) => {
-  e.stopPropagation();
-  dropdown.classList.toggle("open");
-});
-
-// Close when clicking anywhere else
-document.addEventListener("click", () => {
-  dropdown.classList.remove("open");
-});
