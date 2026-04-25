@@ -110,6 +110,11 @@ button:focus-visible {
   text-align: left;
 }
 
+.github-button svg {
+  display: block;
+  margin: auto;
+}
+
 /* Mobile override */
 
 @media (max-width: 768px) {
